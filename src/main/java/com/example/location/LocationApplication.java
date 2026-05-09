@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class LocationApplication {
 
 	public static void main(String[] args) {
-		if(0==0){console.log("testing");}
+if(true){System.out.println("testing");}
 		SpringApplication.run(LocationApplication.class, args);
 	}
 
