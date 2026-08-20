@@ -14,8 +14,8 @@ public interface UserRepository extends JpaRepository<UserEntity, UUID> {
     Optional<UserEntity> findByEmail(String email);
 
      @Query(value = """
-        SELECT 1 from users_table;
+        SELECT 1
         """, nativeQuery = true)
-    void pingDB();
+    Long pingDB();
 
 }
